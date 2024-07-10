@@ -1,1 +1,1 @@
-loadstring(game:HttpGet("https://raw.githubusercontent.com/zackmackburnger/niggerkiller.cc/main/MainScript.lua", true))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/zackmackburnger/vigilant-disco/main/MainScript.lua", true))()
