@@ -1,3 +1,4 @@
+
 local GuiLibrary = shared.GuiLibrary
 local playersService = game:GetService("Players")
 local textService = game:GetService("TextService")
@@ -5309,7 +5310,7 @@ run(function()
 				lightingService.Sky.SkyboxUp = "rbxassetid://7018689553"
 			end)
 		end,
-		Winter = function()
+		Classic = function()
 			task.spawn(function()
 				for i,v in pairs(lightingService:GetChildren()) do
 					if v:IsA("Atmosphere") or v:IsA("Sky") or v:IsA("PostEffect") then
@@ -5318,16 +5319,16 @@ run(function()
 				end
 				local sky = Instance.new("Sky")
 				sky.StarCount = 5000
-				sky.SkyboxUp = "rbxassetid://8139676647"
-				sky.SkyboxLf = "rbxassetid://8139676988"
-				sky.SkyboxFt = "rbxassetid://8139677111"
-				sky.SkyboxBk = "rbxassetid://8139677359"
-				sky.SkyboxDn = "rbxassetid://8139677253"
-				sky.SkyboxRt = "rbxassetid://8139676842"
-				sky.SunTextureId = "rbxassetid://6196665106"
-				sky.SunAngularSize = 11
-				sky.MoonTextureId = "rbxassetid://8139665943"
-				sky.MoonAngularSize = 30
+				sky.SkyboxUp = "rbxassetid://161781263"
+				sky.SkyboxLf = "rbxassetid://161781267"
+				sky.SkyboxFt = "rbxassetid://161781261"
+				sky.SkyboxBk = "rbxassetid://161781263"
+				sky.SkyboxDn = "rbxassetid://161781258"
+				sky.SkyboxRt = "rbxassetid://161781268"
+				sky.SunTextureId = "rbxassetid://640556168"
+				sky.SunAngularSize = 21
+				sky.MoonTextureId = "rbxassetid://1044653800"
+				sky.MoonAngularSize = 11
 				sky.Parent = lightingService
 				local sunray = Instance.new("SunRaysEffect")
 				sunray.Intensity = 0.03
@@ -5527,7 +5528,7 @@ run(function()
 					GameTheme.ToggleButton(false)
 				end
 			else
-				warningNotification("GameTheme", "Disabled Next Game", 10)
+				warningNotification("GameTheme", "disabled next game", 10)
 			end
 		end,
 		ExtraText = function()
@@ -5537,7 +5538,7 @@ run(function()
 	GameThemeMode = GameTheme.CreateDropdown({
 		Name = "Theme",
 		Function = function() end,
-		List = {"Old", "Winter", "Halloween", "Valentines"}
+		List = {"Classic"}
 	})
 end)
 
